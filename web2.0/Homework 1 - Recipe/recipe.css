@@ -1,0 +1,70 @@
+body { 
+    background-image:url('http://www.cs.washington.edu/education/courses/cse190m/09sp/homework/1/silverware.jpg');
+    background-repeat:repeat;
+    background-position:left;
+    background-attachment:fixed;
+    background-color:white
+}
+
+h1 {
+	background-color: rgb(240, 240, 240);
+	color: rgb(164, 164, 0);
+	font-weight: bold;
+	text-align: center;
+	font-size: 22pt;
+	font-family: "Century Gothic", Futura;
+	text-decoration: underline
+}
+
+p.intro {
+	font-family: "Times New Roman";
+	font-size: 11pt;
+	padding-left:36px;
+	color: rgb(64, 64, 64);
+}
+
+h2 {
+	background-color: rgb(240, 240, 240);
+	color: rgb(164, 164, 0);
+	font-weight: normal;
+	text-align: left;
+	font-size: 18pt;
+	font-family: "Century Gothic", Futura;
+	text-decoration: underline
+}
+
+blockquote {
+	font-family: Georgia, "Times New Roman";
+	font-size: 11pt;
+	font-style: italic;
+	color: rgb(64, 64, 64);
+	background-color: rgb(255, 255, 200)
+}
+
+span {
+	font-family: "Times New Roman", Futura;
+	font-size: 11pt;
+	font-weight: bold;
+	color: rgb(64, 64, 64)
+}
+
+li {
+	font-family: "Times New Roman", Futura;
+	font-size: 11pt;
+	color: rgb(64, 64, 64)
+}
+
+ul {
+	font-family: "Times New Roman", Futura;
+	color: rgb(64, 64, 64);
+	list-style-image: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif)
+}
+
+a.l {
+	text-decoration: none
+}
+
+a {
+	font-family: "Times New Roman", Futura;
+	color: rgb(164, 164, 0)
+}

@@ -1,0 +1,81 @@
+/* body 风格 */
+body{
+  background-image: url("1.jpg");
+  font-family: "Microsoft YaHei";
+}
+h1{
+  text-align: center;
+}
+p.tips{
+  text-align: center;
+}
+/* 四个按钮 */
+.control{
+  width: 600px;
+  height: 100px;
+  margin: 0 auto;
+}
+button{
+  background-color: white;
+  outline: none;
+}
+/* 开始和暂停 */
+#start_and_end{
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  margin: 5px 10px;
+  background-image: url("1.jpg");
+}
+/* 计时部分 */
+#time{
+  position: absolute;
+  margin: 0px 320px;
+  width: 300px;
+}
+#time #count{
+  width: 200px;
+  height: 30px;
+  font-size: 1em;
+  color: red;
+  background-image: url("1.jpg");
+  transition: width 30s;
+}
+
+#game_state{
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  margin: 60px 10px;
+  background-image: url("1.jpg");
+}/* 计分部分 */
+#score{
+  position: absolute;
+  margin: 60px 320px;
+  width: 300px;
+}
+#score #scores{
+  width: 60px;
+  height: 30px;
+  color: red;
+  background-image: url("1.jpg");
+  font-size: 1em;
+}
+/***Game主体部分***/
+#gamebox{
+  width: 410px;
+  height: 240px;
+  background-image: url("1.jpg");
+  border-width: 1px;
+  margin: 20px 330px;
+}
+#gamebox input{
+  width: 30px;
+  height: 30px;
+  border:10px groove blue;
+  margin: 5px 3px;
+}
+.instructions{
+  width: 700px;
+  margin: 0 auto;
+}

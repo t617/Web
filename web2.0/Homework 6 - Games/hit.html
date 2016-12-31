@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>打地鼠</title>
+  <link rel="stylesheet" type="text/css" href="hit.css">
+</head>
+<body>
+  <div class="gamebody">
+    <h1>Whac-a-mole</h1>
+    <p class="tips">Test your skill. How boxes(moles) can you check(hit) in 30 second?</p>
+    <!--控制部分-->
+    <div class="control">
+      <button type="button" id="start_and_end">Start Game | Stop Game</button>
+      <p id="time">Time:&nbsp&nbsp<button id="count">30</button></p>
+      <button id="game_state">Game Over</button>
+      <p id="score">Score:&nbsp<button id="scores">0</button></p>
+    </div>
+    <div id="gamebox">
+      <!--地鼠的radio选项洞-->
+      <form>
+      <input type="radio" value="0" onclick="check_is_selected(this)">
+      <input type="radio" value="1" onclick="check_is_selected(this)">
+      <input type="radio" value="2" onclick="check_is_selected(this)">
+      <input type="radio" value="3" onclick="check_is_selected(this)">
+      <input type="radio" value="4" onclick="check_is_selected(this)">
+      <input type="radio" value="5" onclick="check_is_selected(this)">
+      <input type="radio" value="6" onclick="check_is_selected(this)">
+      <input type="radio" value="7" onclick="check_is_selected(this)">
+      <input type="radio" value="8" onclick="check_is_selected(this)">
+      <input type="radio" value="9" onclick="check_is_selected(this)">
+
+      <input type="radio" value="10" onclick="check_is_selected(this)">
+      <input type="radio" value="11" onclick="check_is_selected(this)">
+      <input type="radio" value="12" onclick="check_is_selected(this)">
+      <input type="radio" value="13" onclick="check_is_selected(this)">
+      <input type="radio" value="14" onclick="check_is_selected(this)">
+      <input type="radio" value="15" onclick="check_is_selected(this)">
+      <input type="radio" value="16" onclick="check_is_selected(this)">
+      <input type="radio" value="17" onclick="check_is_selected(this)">
+      <input type="radio" value="18" onclick="check_is_selected(this)">
+      <input type="radio" value="19" onclick="check_is_selected(this)">
+
+      <input type="radio" value="20" onclick="check_is_selected(this)">
+      <input type="radio" value="21" onclick="check_is_selected(this)">
+      <input type="radio" value="22" onclick="check_is_selected(this)">
+      <input type="radio" value="23" onclick="check_is_selected(this)">
+      <input type="radio" value="24" onclick="check_is_selected(this)">
+      <input type="radio" value="25" onclick="check_is_selected(this)">
+      <input type="radio" value="26" onclick="check_is_selected(this)">
+      <input type="radio" value="27" onclick="check_is_selected(this)">
+      <input type="radio" value="28" onclick="check_is_selected(this)">
+      <input type="radio" value="29" onclick="check_is_selected(this)">
+
+      <input type="radio" value="30" onclick="check_is_selected(this)">
+      <input type="radio" value="31" onclick="check_is_selected(this)">
+      <input type="radio" value="32" onclick="check_is_selected(this)">
+      <input type="radio" value="33" onclick="check_is_selected(this)">
+      <input type="radio" value="34" onclick="check_is_selected(this)">
+      <input type="radio" value="35" onclick="check_is_selected(this)">
+      <input type="radio" value="36" onclick="check_is_selected(this)">
+      <input type="radio" value="37" onclick="check_is_selected(this)">
+      <input type="radio" value="38" onclick="check_is_selected(this)">
+      <input type="radio" value="39" onclick="check_is_selected(this)">
+
+      <input type="radio" value="40" onclick="check_is_selected(this)">
+      <input type="radio" value="41" onclick="check_is_selected(this)">
+      <input type="radio" value="42" onclick="check_is_selected(this)">
+      <input type="radio" value="43" onclick="check_is_selected(this)">
+      <input type="radio" value="44" onclick="check_is_selected(this)">
+      <input type="radio" value="45" onclick="check_is_selected(this)">
+      <input type="radio" value="46" onclick="check_is_selected(this)">
+      <input type="radio" value="47" onclick="check_is_selected(this)">
+      <input type="radio" value="48" onclick="check_is_selected(this)">
+      <input type="radio" value="49" onclick="check_is_selected(this)">
+
+      <input type="radio" value="50" onclick="check_is_selected(this)">
+      <input type="radio" value="51" onclick="check_is_selected(this)">
+      <input type="radio" value="52" onclick="check_is_selected(this)">
+      <input type="radio" value="53" onclick="check_is_selected(this)">
+      <input type="radio" value="54" onclick="check_is_selected(this)">
+      <input type="radio" value="55" onclick="check_is_selected(this)">
+      <input type="radio" value="56" onclick="check_is_selected(this)">
+      <input type="radio" value="57" onclick="check_is_selected(this)">
+      <input type="radio" value="58" onclick="check_is_selected(this)">
+      <input type="radio" value="59" onclick="check_is_selected(this)">
+      </form>
+    </div>
+    <div class="instructions">
+      <h2>Instructions:</h2>
+      <ol>
+        <li>Click on the radio button as they are selected randomly by the computer.</li>
+        <li>1 point per hit, minus 1 point per miss.</li>
+      </ol>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var flag=false;
+    var flag_s=true;
+    var games=document.getElementById('game_state');
+    var temp=document.getElementById('start_and_end');
+    var inputs=document.getElementsByTagName("input");
+    var counts=document.getElementById('count');
+    var sign=document.getElementById('scores');
+    var sum=0; // 全局
+    /* 触发动作开始|暂停 */
+    temp.onclick=function() {
+      counts.style.transition="width 30s";
+      counts.style.width="60px";
+      if (flag_s==false) {
+        counts.textContent=30;
+        sum=0;
+        sign.textContent=sum;
+        flag_s=true;
+      }
+      games.textContent="Playing";
+      flag=!flag;
+      setTimeout("timer()",1000);
+    }
+    var time=document.getElementById('count');
+    /* 时间变化 */
+    function timer() {
+      if (flag==true) {
+        hit();
+        var value=parseInt(time.textContent);
+        if (value>0) {
+          time.textContent=value-1;
+        } else {
+          flag=false;
+          flag_s=false;
+          games.textContent="Game Over";
+          alert("Game Over.\nYou score is: "+sum);
+          inputs[ran].checked=false
+          return false;
+        }
+        window.setTimeout("die()",1000); //地鼠随时间变化随机出现
+        window.setTimeout("timer()",1000);
+      }
+    }
+    // 地鼠消失
+    function die() {
+      inputs[ran].checked=false;
+    }
+    // 打地鼠后生成随机数
+    function hit() {
+      ran=Math.floor(Math.random()*60);
+      inputs[ran].checked=true
+    }
+    // 判断是否打中了
+    function check_is_selected(t) {
+      t.checked=false;
+      if (ran==t.value) {
+        sum++;
+        sign.textContent=sum;
+      } else {
+        if (sum> 0) sum--;
+        sign.textContent=sum;
+      }
+    }
+  </script>
+</body>
+</html>

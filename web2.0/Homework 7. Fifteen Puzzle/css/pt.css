@@ -1,0 +1,216 @@
+body{
+  font-family: "Microsoft YaHei";
+  background-image: url(../img/bd.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+h1{
+  text-shadow: 5px 5px 5px #960b90;
+  text-align: center;
+  color: #af1b1b;
+}
+
+img#pic{
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+/* 游戏框 */
+#pin_tu{
+  width: 410px;
+  height: 410px;
+  margin: 50px auto;
+}
+
+/* 按钮位置 */
+#setting{
+  text-align: center;
+  margin-top: 80px;
+}
+#setting #start, #reset{
+  width: 200px;
+  height: 50px;
+  font-size: 1.5em;
+  background-image: url(../img/bd.jpg);
+  outline: none;
+  border-radius: 20px;
+}
+/* 提示 */
+#tips{
+  width: 300px;
+  margin: auto;
+}
+#tips #is_s{
+  text-align: center;
+  background-image: url(../img/bd.jpg);
+  color: #e94b4b;
+  font-size: 2em;
+}
+#pin_tu #pt2, #pt3, #pt4, #pt5, #pt6, #pt7, #pt8, #pt9, #pt10, 
+#pt11, #pt12, #pt13, #pt14, #pt15, #pt16{
+  width: 100px;
+  height: 100px;
+  transition:all 0.3s;
+} 
+#pin_tu #pt1{
+  opacity: 0;
+}
+/* 15个div的图形位置 */
+#pin_tu #pt2{
+  background-position: 25% 0%;
+}
+#pin_tu #pt3{
+  background-position: 50% 0%;
+}
+#pin_tu #pt4{
+  background-position: 75% 0%;
+}
+#pin_tu #pt5{
+  background-position: 0% 25%;
+}
+#pin_tu #pt6{
+  background-position: 25% 25%;
+}
+#pin_tu #pt7{
+  background-position: 50% 25%;
+}
+#pin_tu #pt8{
+  background-position: 75% 25%;
+}
+#pin_tu #pt9{
+  background-position: 0% 50%;
+}
+#pin_tu #pt10{
+  background-position: 25% 50%;
+}
+#pin_tu #pt11{
+  background-position: 50% 50%;
+}
+#pin_tu #pt12{
+  background-position: 75% 50%;
+}
+#pin_tu #pt13{
+  background-position: 0% 75%;
+}
+#pin_tu #pt14{
+  background-position: 25% 75%;
+}
+#pin_tu #pt15{
+  background-position: 50% 75%;
+}
+#pin_tu #pt16{
+  background-position: 75% 75%;
+}
+/* 15个div的hover效果 */
+#pt2:hover, #pt3:hover, #pt4:hover, #pt5:hover, #pt6:hover, #pt7:hover, #pt8:hover,
+#pt9:hover, #pt10:hover, #pt11:hover, #pt12:hover, #pt13:hover, #pt14:hover, #pt15:hover, #pt16:hover{
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  z-index: 2;
+  cursor: pointer;
+}
+/* 15个div的位置 */
+.position1, .position2, .position3, .position4, .position5, .position6, .position7, .position8,
+.position9, .position10, .position11, .position12, .position13, .position14, .position15, .position16{
+  background: url(../img/logo.jpg);
+  position: absolute;
+  border: solid #f7f2f6;
+  border-width: 2px;
+  padding: 0;
+}
+/* 15个div的位置 */
+.position1{
+  margin: 0px 0px;
+}
+.position2{
+  margin: 0px 100px;
+}
+.position3{
+  margin: 0px 200px;
+}
+.position4{
+  margin: 0px 300px;
+}
+.position5{
+  margin: 100px 0px;
+}
+.position6{
+  margin: 100px 100px;
+}
+.position7{
+  margin: 100px 200px;
+}
+.position8{
+  margin: 100px 300px;
+}
+.position9{
+  margin: 200px 0px;
+}
+.position10{
+  margin: 200px 100px;
+}
+.position11{
+  margin: 200px 200px;
+}
+.position12{
+  margin: 200px 300px;
+}
+.position13{
+  margin: 300px 0px;
+}
+.position14{
+  margin: 300px 100px;
+}
+.position15{
+  margin: 300px 200px;
+}
+.position16{
+  margin: 300px 300px;
+}
+.li-box{
+  position: absolute;
+  margin: 175px 0px;
+  height: 30px;
+  display: inline-block;
+  overflow: hidden;
+}
+.li-box ul{
+  position: relative;
+  animation: moveUp 8s 0.6s infinite;
+  -webkit-animation: moveUp 8s 0.6s infinite;
+}
+.li-box ul, li{
+  margin: 0;
+  padding:0;
+  font-size: 1em;
+  color: #af1b1b;
+  line-height: 1.8;
+  list-style: none;
+}
+/* 流动字幕 */
+@keyframes moveUp {
+  0% {top:0px;}
+  18% {top:0px;}
+  20% {top:-28px;}
+  38% {top:-28px;}
+  40% {top:-56px;}
+  58% {top:-56px;}
+  60% {top:-84px;}
+  78% {top:-84px;}
+  80% {top:-112px;}
+  98% {top:-112px;}
+}
+@-webkit-keyframes moveUp {
+  0% {top:0px;}
+  18% {top:0px;}
+  20% {top:-28px;}
+  38% {top:-28px;}
+  40% {top:-56px;}
+  58% {top:-56px;}
+  60% {top:-84px;}
+  78% {top:-84px;}
+  80% {top:-112px;}
+  98% {top:-112px;}
+}

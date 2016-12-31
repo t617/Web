@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>用户登录/注册系统</title>
+		<meta charset='utf-8' />
+    <link rel="icon" href="img/hj.jpg" type="img/jpg" />
+		<link rel="stylesheet" type="text/css" href="css/sign.css" />
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<form action="/login" method="post">
+      <p class="header">Sign In</p>
+      <p>Name&nbsp<input name="username" class="text" /></p> <div id="tip_name"></div>
+      <p>ID&nbsp&nbsp<input name="id" class="text" /> </p><div id="tip_id"></div>
+      <p>TEL&nbsp <input name="tel" class="text" /> </p><div id="tip_tel"></div>
+      <p>Email <input name="email" class="text" /> </p><div id="tip_email"></div>
+      <input type="reset" id="reset" value="Reset"/>
+      <input type="submit" id="submit" value="Submit"/>
+    </form>
+	</body>
+</html>

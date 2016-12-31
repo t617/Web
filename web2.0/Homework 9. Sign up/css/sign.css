@@ -1,0 +1,41 @@
+body{
+	background: url('https://static.pexels.com/photos/47426/pexels-photo-47426.jpeg') no-repeat;
+	background-size: 100%;
+	font-size: 20px;
+}
+/* 错误提示板 */
+#tip_id, #tip_name, #tip_tel, #tip_email{
+	color: red;
+	width: 400px;
+	height: 5px;
+}
+form{
+	text-align: center;
+	width: 300px;
+	height: 350px;
+	margin: auto;
+	opacity: 0.7;
+}
+form p{
+	color: #FFF;
+}
+form p.header{
+	text-shadow: 1px 1px;
+  color: #0fe6aa;
+	font-size: 35px;
+}
+form input{
+	border-radius: 4px;
+	opacity: 0.7;
+}
+.text {
+	width: 180px;
+	height: 25px;
+	margin: 0px auto;
+}
+#submit, #reset {
+	margin-top: 30px;
+	font-size: 20px;
+	width: 76px;
+	height: 30px;
+}

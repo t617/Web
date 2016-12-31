@@ -1,0 +1,70 @@
+/* By Song Zhiqiang */
+
+body{
+  background-image: url("../img/timg.jpg");
+  font-family: "Times New Roman";
+}
+/* 计算器全身 */
+#caculator{
+  background-color: #444444;
+  border: 1px solid;
+  border-radius: 20px;
+  width: 320px;
+  height: 520px;
+  margin: 20px auto;
+}
+#caculator > p#sign{
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 4px white;
+  font-size: 1.5em;
+  margin-top: 5px;
+  padding: 0;
+}
+/* 屏幕 */
+#caculator #screen {
+  padding-top: 5px;
+}
+
+/* 屏幕输入框 */
+#screen #input_sreeen{
+  border: 1px solid lightgray;
+  font-size: 1.7em;
+  margin: 0 0 0 13px;
+  text-align: right;
+  width: 290px;
+  height: 40px;
+}
+
+/* 20个键 */
+#keys{
+  width: 300px;
+  height: 390px;
+  margin: 12px 0 0 23px;
+  padding-bottom: 0;
+}
+
+/* 每个键钮的样式 */
+#keys .buttons{
+  overflow: hidden;
+  font-size: 1.8em;
+  border-radius: 10px;
+  width: 54px;
+  height: 37px;
+  text-align:center;
+  color: white;
+  outline: none;
+  background-color: #AAAAAA;
+  margin: 31px 15px 0px 0;
+}
+
+/* hover效果 */
+#keys .buttons:hover {
+  background-color: #DDDDDD;
+}
+
+/* active效果 */
+#keys .buttons:active {
+  color: black;
+  background-color: #FFFFFF;
+}

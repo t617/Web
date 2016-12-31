@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> caculator </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/caculator.css">
+  <script type="text/javascript" src="js/caculator.js"></script>
+</head>
+<body>
+  <div id="caculator_box">
+    <div id="caculator">
+      <p id="sign">Caculator</p>
+      <div id="screen">
+        <input type="text" name="input_sreeen" id="input_sreeen" readonly="readonly">
+      </div>
+      <div id="keys">
+        <!--the keys you need-->
+        <!--first row-->
+        <input type="button" id="7" onclick="jsq(this.id)" value="7" class="buttons">
+        <input type="button" id="8" onclick="jsq(this.id)" value="8" class="buttons">
+        <input type="button" id="9" onclick="jsq(this.id)" value="9" class="buttons">
+        <input type="button" id="/" onclick="jsq(this.id)" value="/" class="buttons">
+        <!--second row-->
+        <input type="button" id="4" onclick="jsq(this.id)" value="4" class="buttons">
+        <input type="button" id="5" onclick="jsq(this.id)" value="5" class="buttons">
+        <input type="button" id="6" onclick="jsq(this.id)" value="6" class="buttons">
+        <input type="button" id="*" onclick="jsq(this.id)" value="*" class="buttons">
+        <!--third row-->
+        <input type="button" id="1" onclick="jsq(this.id)" value="1" class="buttons">
+        <input type="button" id="2" onclick="jsq(this.id)" value="2" class="buttons">
+        <input type="button" id="3" onclick="jsq(this.id)" value="3" class="buttons">
+        <input type="button" id="-" onclick="jsq(this.id)" value="-" class="buttons">
+        <!--fourth row-->
+        <input type="button" id="0" onclick="jsq(this.id)" value="0" class="buttons">
+        <input type="button" id="." onclick="jsq(this.id)" value="." class="buttons">
+        <input type="button" id="<-" onclick="Back(this.id)" value="←" class="buttons">
+        <input type="button" id="+" onclick="jsq(this.id)" value="+" class="buttons">
+        <!--fifth row-->
+        <input type="button" id="(" onclick="jsq(this.id)" value="(" class="buttons">
+        <input type="button" id=")" onclick="jsq(this.id)" value=")" class="buttons">
+        <input type="button" id="CE" onclick="Clear(this.id)" value="CE" class="buttons">
+        <input type="button" id="=" onclick="eva(this.id)" value="=" class="buttons">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

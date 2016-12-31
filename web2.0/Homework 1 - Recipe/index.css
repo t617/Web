@@ -1,0 +1,51 @@
+body {
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(http://pic.qiantucdn.com/58pic/14/74/66/59558PICiXv_1024.jpg);
+    background-repeat:repeat;
+    background-position:center;
+}
+h1 {
+	font-size: 50px;
+	background-image: url(http://img3.imgtn.bdimg.com/it/u=794568660,3255795585&fm=206&gp=0.jpg);
+	text-shadow: 5px 5px 5px yellow;
+	text-align: center
+}
+a {
+	font-size: 18pt;
+	text-align: center;
+}
+p.intro {
+	border:white solid thin;
+    outline-style:solid;
+    outline-width:thin;
+	text-indent: 2em;
+	font-family: "Times New Roman";
+	font-size: 18pt
+}
+img {
+	text-align: left;
+	border:white solid thin;
+    outline-style: dashed;
+    outline-width:thin;
+    outline-width:3px
+}
+p.link {
+	text-align: center;
+	font-family: "Times New Roman";
+	font-size: 18pt
+}
+
+p.end {
+	background-color: #DDDDDD;
+	font-family: "Times New Roman";
+	padding-right:36px;
+	font-size: 17px;
+	text-align:right;
+	border:white solid thin;
+    outline-style:groove;
+    outline-width:thin
+}
+ul {
+	background-image: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-213300.jpg);
+}

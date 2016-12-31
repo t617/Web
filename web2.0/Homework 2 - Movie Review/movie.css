@@ -1,0 +1,141 @@
+body {
+	margin: 0;
+    background: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/background.png?version=1&modificationDate=1268896312000);
+}
+
+.topic {
+	text-align: center;
+	background-repeat: repeat-x;
+    background: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/bannerbackground.png?version=1&modificationDate=1268896312000);
+    height: 50px;
+}
+
+h1 {
+    font-size: 24pt;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main {
+    font-size: 8pt;
+    width: 800px;
+    border: 4px solid gray;
+    margin: 0 auto;
+}
+
+.main_right {
+    width: 250px;
+    float: right;
+    background-color: #A2B964;
+}
+
+.review {
+    width: 550px;
+}
+
+.rotten {
+    background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/rottenbackground.png?version=1&modificationDate=1268896385000);
+    width: 550px;
+    height: 83px;
+}
+
+.rotten img {
+    vertical-align: bottom;
+}
+
+.pere {
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+    vertical-align: baseline;
+}
+
+.totalreviews {
+    color: white;
+    vertical-align: baseline;
+}
+
+.right {
+    width: 47%;
+    float: right;
+    margin: 2% 2% 2% 1%;
+}
+
+.left {
+    width: 47%;
+    float: left;
+    margin: 2% 1% 2% 2%;
+}
+
+.txt1 {
+    background-color: #E1D697;
+    border: 2px solid gray;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.txt1 p {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.txt1 p img {
+    margin: 0 5px 0 0;
+    width: auto;
+    float: left;
+}
+
+.txt2 {
+    margin: 0 0 3em 0;
+}
+
+.txt2 img {
+    float: left;
+}
+
+.txt2 p {
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 5px;
+}
+
+.source {
+    font-style: italic;
+    font-family: Verdana, Tahoma, sans-serif;;
+}
+
+dl {
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+}
+
+dt {
+    font-weight: bold;
+    margin: 1em 0 0 0;
+}
+
+.list {
+    margin: 10px;
+}
+
+.footer {
+    background-color: #A2B964;
+    clear: both;
+}
+
+.footer p {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.bottomimg {
+    margin: 0;
+	height: 50px;
+	width: 100px;
+	position: fixed;
+	right: 0px;
+	bottom: 20px;
+}

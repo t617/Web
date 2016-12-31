@@ -1,0 +1,42 @@
+body{
+  font-family: "Times New Roman", "courier";
+}/* 设置表格线为一条*/
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table tr th{
+  color: #FFF;
+  padding-right: 20px;
+  text-align: left;
+  background-color: #00006d;
+}
+/* 鼠标对th选择时候的效果*/
+table tr th:hover{
+  cursor: pointer;
+  background-color: #a3a3eb;
+}
+
+table tr th img{
+  float: right;
+}
+table tr th, td{
+  text-align: left;
+  border: solid #b1b1b1;
+  border-width: 2px;
+}
+/*栏目奇偶行的背景色保持奇数白色、偶数浅灰色*/
+table tr:nth-child(even) td{
+  background-color: #cfcfd8;
+}
+.click_odd, .click_even{
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+/*排序图标变化*/
+.click_odd{
+  background-image: url("../img/ascend.png");
+}
+.click_even{
+  background-image: url("../img/descend.png");
+}

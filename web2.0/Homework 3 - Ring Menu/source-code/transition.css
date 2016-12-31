@@ -1,0 +1,284 @@
+/* By Song Zhiqiang */
+
+/* 初始化bottom */
+#bottom-positioner {
+  position: relative;
+  border-width: medium;
+  width: 250px;
+  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+/* icon的初始化及变化 */
+div.apb > div.icon {
+  background-color: rgba(48, 63, 159, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 155px;
+  right: 85px;
+
+  transition: 0.7s ease-out, background-image 0.2s ease-out;
+  -webkit-transition: 0.7s ease-out, background-image 0.2s ease-out;
+  -o-transition: 0.7s ease-out, background-image 0.2s ease-out;
+  -moz-transition: 0.7s ease-out, background-image 0.2s ease-out;
+  transition-delay: 0.8s;
+
+  background-image: url(assets/images/atplus_white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px, 20px;
+}
+
+#button:hover div.apb > div.icon {
+  background-image: url(assets/images/atplus_green.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(2);
+
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition-delay: 0s;
+
+  background-color: rgba(48, 63, 159, 1);
+}
+
+/* info初始化 */
+div.info {
+  border-radius: 50%;
+
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 88px;
+  bottom: 150px;
+
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  -moz-transition: 0.4s;
+
+  transition-delay: 0.4s;
+  opacity: 0;
+  overflow: hidden;
+}
+/* info出现 */
+#button:hover div.info {
+  background-color: rgb(124, 125, 126);
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  right: 32px;
+  bottom: 206px;
+
+  /* 变为可见 */
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+/* 五个小图标初始化 */
+#control-ring-container > #control-ring {
+  list-style:none;
+  padding: 0px;
+
+  border-radius: 50% 50% 50% 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  right: 81px;
+  bottom: 150px;
+
+  opacity: 0;
+
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+
+  transition-delay: 0.4s;
+
+  margin: 0px 0px 0px 0px;
+}
+
+/* 出现五个小图标 */
+#button:hover #control-ring-container > #control-ring {
+  border-radius: 50% 50% 50% 50%;
+  width: 200px;
+  height: 200px;
+  right: 0px;
+  bottom: 75px;
+
+  opacity: 1;
+  transition-delay: 0s;
+  margin: 0px 0px 0px 0px;
+}
+
+/* 去掉ul的点 */
+#info-bar div.info ul {
+  list-style:none;
+}
+
+/* 讨论图标 */
+#info-bar div.info div.user {
+  position: absolute;
+  top: 7%;
+  right: 40%;
+  font-weight: bold;
+}
+
+/* 讨论数目 */
+#info-bar div.info li.user span {
+  position: relative;
+  color: white;
+  right: -22%;
+  vertical-align: super;
+  font-weight: bold;
+}
+
+/* 评论图标 */
+#info-bar div.info li.comment {
+  position: absolute;
+  top: 30%;
+  right: 36%;
+  font-weight: bold;
+}
+
+/* 评论数目 */
+#info-bar div.info li.comment span {
+  position: relative;
+  color: white;
+  font-size: 30px;
+  right: -25%;
+  font-weight: bold;
+}
+
+/* 我的评论 */
+#info-bar div.info li.posted {
+  position: absolute;
+  top: 65%;
+  right: 63%;
+}
+
+/* 我的评论数目 */
+#info-bar div.info li.posted span {
+  color: #079E6E;
+  font-size: 18px;
+  position: relative;
+  right: -24%;
+  vertical-align: super;
+  font-weight: bold;
+}
+
+/* 被赞 */
+#info-bar div.info li.like {
+  position: absolute;
+  top: 64%;
+  right: 23%;
+}
+
+/* 被赞数目 */
+#info-bar div.info li.like span {
+  color: #079E6E;
+  font-size: 18px;
+  position: relative;
+  right: -24%;
+  vertical-align: super;
+  font-weight: bold;
+}
+
+/* button5个菜单的初始情况 */
+
+/* 蒙版 */
+#control-ring-container > #control-ring > li.mask {
+  background-image: url(assets/images/mask.png);
+  position: absolute;
+  right: 67%;
+  bottom: 54%;
+}
+
+/* 历史纪录 */
+#control-ring-container > #control-ring > li.history {
+  background-image: url(assets/images/history.png);
+  position: absolute;
+
+  right: 70%;
+  bottom: 36%;
+}
+
+/* 消息 */
+#control-ring-container > #control-ring > li.message {
+  background-image: url(assets/images/message.png);
+  position: absolute;
+  right: 64%;
+  bottom: 18%;
+}
+
+/* 未读消息 */
+#control-ring-container > #control-ring > li.message span.unread {
+  color: white;
+  font-size: x-small;
+  vertical-align: middle;
+  position: relative;
+  right: -65%;
+  top: -4%;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+
+/* 设置 */
+#control-ring-container > #control-ring > li.setting {
+  background-image: url(assets/images/setting.png);
+  position: absolute;
+  right: 48%;
+  bottom: 7%;
+}
+
+/* 登陆 注册 */
+#control-ring-container > #control-ring > li.sign {
+  background-image: url(assets/images/signin.png);
+  position: absolute;
+  right: 27%;
+  bottom: 9%;
+}
+
+/* 五个图标初始统一的css设置 */
+#control-ring-container > #control-ring li.mask, li.history, li.message, li.setting, li.sign {
+  /* 透明度为0 */
+  visibility: hidden;
+
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px, 20px;
+  
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* 触发后的五个图标 */
+#button:hover #control-ring-container > #control-ring li.mask, li.history, li.message, li.setting, li.sign {
+  background-color: rgb(124, 125, 126);
+  width: 33px;
+  height: 33px;
+  /* 显示 */
+  visibility: visible;
+
+  transition-delay: 0s;
+}
+/********************/

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="maze.css">
+  <title></title>
+</head>
+<body>
+  <div id="maze-box">
+    <div class="head_part">
+      <h1 class="maze-title">The Amazing Mounse Maze!</h1>
+      <p class="introduction">Move your mouse over the "S" to begin.</br></p>
+      <p id="sign">&nbsp</p>
+    </div>
+    <div id="maze-body">
+      <!--迷宫wall-->
+      <div id="S-block" class="wall">S</div>
+      <div id="E-block" class="wall">E</div>
+      <div id="left-block" class="wall"></div>
+      <div id="right-block" class="wall"></div>
+      <div id="first-block" class="wall"></div>
+      <div id="second-block" class="wall"></div>
+      <div id="third-block" class="wall"></div>
+      <div id="fourth-block" class="wall"></div>
+      <div id="fifth-block" class="wall"></div>
+      <div id="sixth-block" class="wall"></div>
+      <div id="seventh-block" class="wall"></div>
+    </div>
+    <div class="tail_part">
+      <p>The object of this game is to guide the mouse cursor through the start area </br>and get to the end area. Be sure to avoid the walls</p>
+      <div id="maze-sign"></div>
+      <p>Good luck!</p>
+    </div>
+  </div>
+  <script type="text/javascript">
+    window.onload=function() {
+      var flag=true;
+      var flag_succeed=true;
+      var flag_reset=true;
+      var temp=document.getElementById("sign");
+      var start=document.getElementById("S-block");
+      // 开始 重来
+      start.onmousemove=function() {
+        if (flag_reset==false) {
+          location.reload();
+        }
+        flag=false;
+      };
+      // 判断是否碰墙
+      var tl=document.getElementById("left-block");
+      tl.onmouseover=function() {
+        if (flag==false) {
+          flag_succeed=false;
+          tl.style.backgroundColor="#FF3333"; //变色
+          defeat();
+        }
+      }
+      var tr=document.getElementById("right-block");
+      tr.onmouseover=function() {
+        if (flag==false) {
+          flag_succeed=false;
+          tr.style.backgroundColor="#FF3333";
+          defeat();
+        }
+      }
+      var t1=document.getElementById("first-block");
+      t1.onmouseover=function() {
+        if (flag==false) {
+          flag_succeed=false;
+          t1.style.backgroundColor="#FF3333";
+          defeat();
+        }
+      }
+      var t2=document.getElementById("second-block");
+      t2.onmouseover=function() {
+        if (flag==false) {
+          flag_succeed=false;
+          t2.style.backgroundColor="#FF3333";
+          defeat();
+        }
+      }
+      var t3=document.getElementById("third-block");
+      t3.onmouseover=function() {
+        if (flag==false) {
+          flag_succeed=false;
+          t3.style.backgroundColor="#FF3333";
+          defeat();
+        }
+      }
+      var t4=document.getElementById("fourth-block");
+      t4.onmouseover=function() {
+        if (flag==false) {
+          flag_succeed=false;
+          t4.style.backgroundColor="#FF3333";
+          defeat();
+        }
+      }
+      var t5=document.getElementById("fifth-block");
+      t5.onmouseover=function() {
+        if (flag==false) {
+          flag_succeed=false;
+          t5.style.backgroundColor="#FF3333";
+          defeat();
+        }
+      }
+      var t6=document.getElementById("sixth-block");
+      t6.onmouseover=function() {
+        if (flag==false) {
+          flag_succeed=false;
+          t6.style.backgroundColor="#FF3333";
+          defeat();
+        }
+      }
+      var t7=document.getElementById("seventh-block");
+      t7.onmouseover=function() {
+        if (flag==false) {
+          flag_succeed=false;
+          t7.style.backgroundColor="#FF3333";
+          defeat();
+        }
+      }
+      // 到达目地点判断
+      var s=document.getElementById("E-block");
+      s.onmouseover=function(event) {
+        var x=event.clientX;
+        if (flag_succeed==true) {
+          if (x< 800) {
+            win();
+          } else {
+            temp.textContent="Don't cheat, you should start form the 'S' and move to the 'E' inside the maze!";
+            flag=true;
+            flag_reset=false;
+          }
+          flag_succeed=false;
+        }
+      }
+      // 赢得结果
+      function win() {
+          temp.textContent="You Win";
+          flag=true;
+          flag_reset=false;
+      }
+      // 输的结果
+      function defeat() {
+        temp.textContent="You lose";
+        flag=true;
+        flag_reset=false;
+      }
+    };
+  </script>
+</body>
+</html>

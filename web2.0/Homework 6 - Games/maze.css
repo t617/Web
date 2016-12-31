@@ -1,0 +1,152 @@
+/* By Song Zhiqiang */
+/* 迷宫整体 */
+#maze-box{
+  margin: auto;
+  font-family: "Microsoft YaHei";
+}
+/* 头部部分 */
+.head_part{
+  text-align: center;
+}
+h1.maze-title{
+  font-size: 2.2em;
+}
+p.introduction{
+  font-size: 1.5em;
+}
+/* 游戏通知界面 */
+p#sign{
+  font-size: 1.5em;
+}
+
+#maze-body{
+  text-align: center;
+  width: 550px;
+  height: 300px;
+  font-size: 1.5em;
+  margin: auto;
+  background-color: white;
+}
+/* 分的块的布局 */
+#S-block{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin-top: 210px;
+  border: solid;
+  border-width: 2px;
+  background-color: #00FF00;
+}
+#E-block{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin-left: 511px;
+  margin-top: 210px;
+  border: solid;
+  border-width: 2px;
+  background-color: #5555FF;
+}
+#left-block{
+  position: absolute;
+  background-color: rgb(238,238,238);
+  width: 180px;
+  height: 50px;
+  margin-bottom: 400px;
+  border: solid;
+  border-width: 1px;
+  border-right-style: none;
+  border-bottom-style: none;
+}
+#right-block{
+  background-color: rgb(238,238,238);
+  position: absolute;
+  width: 180px;
+  height: 50px;
+  margin: auto auto 400px 368px;
+  border: solid;
+  border-width: 1px;
+  border-bottom-style: none;
+  border-left-style: none;
+}
+#first-block{
+  background-color: rgb(238,238,238);
+  position: absolute;
+  width: 180px;
+  height: 150px;
+  border: solid;
+  border-width: 1px;
+  border-top-style: none;
+  margin: 50px auto auto 0;
+}
+#second-block{
+  background-color: rgb(238,238,238);
+  position: absolute;
+  width: 187px;
+  height: 49px;
+  margin: 0 auto auto 181px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 1px;
+}
+#third-block{
+  background-color: rgb(238,238,238);
+  position: absolute;
+  width: 180px;
+  height: 150px;
+  border: solid;
+  border-width: 1px;
+  border-top-style: none;
+  margin: 50px auto auto 367px;
+}
+#fourth-block{
+  background-color: rgb(238,238,238);
+  width: 80px;
+  height: 150px;
+  border: solid;
+  border-bottom-style: none;
+  border-width: 1px;
+  position: absolute;
+  margin: 105px auto auto 234px;
+}
+#fifth-block{
+  background-color: rgb(238,238,238);
+  position: absolute;
+  width: 233px;
+  height: 42px;
+  border: solid;
+  border-width: 1px;
+  border-right-style: none;
+  margin-top: 255px;
+}
+#sixth-block{
+  background-color: rgb(238,238,238);
+  position: absolute;
+  width: 233px;
+  height: 42px;
+  border: solid;
+  border-width: 1px;
+  border-left-style: none;
+  margin: 255px auto auto 316px;
+}
+#seventh-block{
+  background-color: rgb(238,238,238);
+  position: absolute;
+  width: 82px;
+  height: 42px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  margin: 256px auto auto 234px;
+}
+/* 尾部 */
+.tail_part{
+  margin: auto;
+  width: 640px;
+  font-size: 1.1em;
+}
+#maze-sign{
+  width: 100px;
+  height: 30px;
+  margin: 0 auto 0 auto;
+  background-color: #DCDCDC;
+}
